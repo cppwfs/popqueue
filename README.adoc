@@ -1,0 +1,27 @@
+= popqueue
+
+This is a Spring boot application that pulls data from a rabbit exchange :testtock-in-0
+
+== Requirements:
+
+* Java 11 or Above
+
+== Classes:
+
+* PopqueueApplication - the Spring Boot Main Application
+
+* PopqueueController - Controller that returns the item at the top of the queue.
+
+== Build:
+
+[source,shell,indent=2]
+----
+mvn clean package
+----
+
+=== Run:
+
+[source,shell,indent=2]
+----
+java -jar target/popqueue-0.0.1-SNAPSHOT.jar
+----
